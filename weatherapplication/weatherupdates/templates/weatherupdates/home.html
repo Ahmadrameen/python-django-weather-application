@@ -16,6 +16,20 @@
                     </div>
                 </div>
             </form>
+
+            <hr>
+
+            <div class="card">
+                <div class="card-body">
+                    <img src="http://openweathermap.org/img/w/{{ city_weather_update.icon }}.png" alt="">
+                    <div class="card-text float-end">{{ city_weather_update.time }}</div>
+                    <div class="card-text">{{ city_weather_update.city }}</div>
+                    <div class="card-text">{{ city_weather_update.temperature }}</div>
+                    <div class="card-text">{{ city_weather_update.description }}</div>
+                    <div class="card-text">{{ city_weather_update.wind }}</div>
+                    <div class="card-text">{{ city_weather_update.humidity }}</div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
